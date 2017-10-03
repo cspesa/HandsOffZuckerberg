@@ -1,0 +1,66 @@
+1. The figure below shows the cycle of a dynamic webpage. Dynamic in the
+ sense that the webpage takes in user data and will change automatically 
+ based on that data. Unlike a static site that doesn't change and is 
+ writtine purely in HTML. In picture 1 we see the webpage that the user 
+ sees. This could be a webpage like google. When a user gives data to the 
+ webpage, such as typing in a search query, that data is sent to the web 
+ server. The server then takes the data, the query, and processes it in PHP 
+ which will then tell the data base what needs to be stored or retreived, in 
+ this case the result of the query will be received. The returned data, the 
+ search results, are then processed through PHP and merged with HTML on the 
+ web server. The web server, using HTML, presents the data, the search 
+ results, back to the user on the webpage in a readable format. 
+
+2. 
+	a. The issue, if the server provides the correct time assuming that the 
+	correct syntax was used, is the server is desiplaying its own local 
+	time. This server's local time zone my differ from the users time zone. 
+	To fix this, the user can set the timezone by declaring a new DateTime 
+	object and utilizing the new DateTimeZone parameter. 
+
+	b. A get method is used mainly to view data while a post method is used 
+	to change data, such as changing a password.
+
+	c. A concatenation operator in PHP is . which concatenates the right and 
+	left string arguments given into a single string. In class we used this 
+	in basicform.php where we combined several strings, including php 
+	functions with string outputs, to make a basic entry form. 
+
+	d.
+		i. Variable names must begin with a $, then the next character must 
+		be a letter or an underscore. Any proceeding character can be 
+		letters, numbers or underscores. Variables in PHP do not have to be 
+		given an explicit data type upon declaration.
+		The syntax is as follows
+		$x = 8;
+		In this scenario, the variable $x is being asigned the integer value 
+		8
+		ii. Constants do not begin with a dollar sign and are customarily 
+		named using all uppercase letters. Constants can be named using 
+		reserved words in PHP, however this will cause significant errors to 
+		occur and should be avoided. Constants are defined using the 
+		define() function and cannot be changed once declared.  
+		iii. The name field in HTML is used to give the data that is being 	
+		inputed a label to be referenced in computations later. 
+
+	e. 
+		i. Declaring data types of variables
+			int $x = 5;
+		ii. Missing $ in varaible declarations
+			int x = 5;
+		iii. Missing ; at the end of any line
+			int x = 5
+		iv. Attempting to declare constants with reserved words
+			define(ECHO, 5);
+		v. Missing PHP HTML command to inform the HTML file of the use of PHP
+		
+			echo "Hello World" #incorrect
+
+			<?php
+				echo "Hello World" *correct
+			?>
+
+	f. The "radio" input type generates a bubble such as in a multiple 
+	choice questions. The name field is used twice for two different inputs, because which ever input the user chooses, that data, male or female, will be assigned to the label "gender". 
+
+
